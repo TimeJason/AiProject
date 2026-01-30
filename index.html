@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人网站 · 全栈产品化个人站</title>
+    <meta
+      name="description"
+      content="个人品牌、博客、作品集、工具集与后台管理的一体化个人网站示例。"
+    />
+    <meta property="og:title" content="个人网站 · 全栈产品化个人站" />
+    <meta
+      property="og:description"
+      content="个人品牌、博客、作品集、工具集与后台管理的一体化个人网站示例。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="skip-links">
+      <a href="#main">跳到主要内容</a>
+      <a href="#tools">跳到工具中心</a>
+      <a href="#contact">跳到联系我</a>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="avatar" aria-hidden="true">Y</span>
+          <div>
+            <p class="brand-title" data-i18n="brand">Yun · 产品化个人站</p>
+            <p class="brand-sub" data-i18n="tagline">Build · Share · Inspire</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#home">首页</a>
+          <a href="#about">关于我</a>
+          <a href="#blog">博客</a>
+          <a href="#projects">作品</a>
+          <a href="#tools">工具</a>
+          <a href="#dashboard">管理台</a>
+        </nav>
+        <div class="actions">
+          <button id="theme-toggle" class="ghost">深色模式</button>
+          <button id="lang-toggle" class="ghost">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="status">当前状态：正在构建 AI + Web 产品</p>
+            <h1 data-i18n="headline">一个可持续演进的个人网站系统</h1>
+            <p class="lead" data-i18n="intro">
+              集成品牌展示、知识沉淀、作品集、工具平台与后台管理，支持模块化扩展与工程化部署。
+            </p>
+            <div class="cta">
+              <a class="primary" href="#blog">阅读博客</a>
+              <a class="secondary" href="#projects">查看作品</a>
+            </div>
+            <div class="badge-group" aria-label="技能标签">
+              <span>前端架构</span>
+              <span>产品设计</span>
+              <span>技术写作</span>
+              <span>AI 工具链</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3 data-i18n="overview">网站总览</h3>
+            <ul>
+              <li><strong>108</strong> 篇文章</li>
+              <li><strong>18</strong> 个项目</li>
+              <li><strong>6</strong> 个内置工具</li>
+              <li><strong>99%</strong> Lighthouse</li>
+            </ul>
+            <button class="ghost">查看站点公告</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-i18n="about">关于我</h2>
+            <p>致力于打造高可用、高可访问的个人产品生态。</p>
+          </div>
+          <div class="about-grid">
+            <article class="card">
+              <h3>个人介绍</h3>
+              <p>
+                我是一名全栈工程师与独立创作者，聚焦前后端分离架构、工程化体系与产品增长。
+              </p>
+              <div class="meta">
+                <span>📍 上海</span>
+                <span>🎯 目标：打造个人产品矩阵</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>成长时间轴</h3>
+              <ol class="timeline">
+                <li>
+                  <strong>2024</strong>
+                  <span>全平台知识库系统上线，支持多语言与插件化。</span>
+                </li>
+                <li>
+                  <strong>2022</strong>
+                  <span>带领团队完成 SaaS 产品重构。</span>
+                </li>
+                <li>
+                  <strong>2019</strong>
+                  <span>启动个人品牌站，开始技术写作。</span>
+                </li>
+              </ol>
+            </article>
+            <article class="card">
+              <h3>技能雷达</h3>
+              <div class="skill-bars">
+                <div>
+                  <span>前端工程化</span>
+                  <div class="bar"><span style="width: 92%"></span></div>
+                </div>
+                <div>
+                  <span>后端架构</span>
+                  <div class="bar"><span style="width: 85%"></span></div>
+                </div>
+                <div>
+                  <span>产品设计</span>
+                  <div class="bar"><span style="width: 78%"></span></div>
+                </div>
+                <div>
+                  <span>数据分析</span>
+                  <div class="bar"><span style="width: 72%"></span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>博客与知识库</h2>
+            <p>支持 Markdown / 富文本、自动目录与阅读增强。</p>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <h3>企业级前端架构指南</h3>
+              <p>涵盖模块化、可插拔与性能优化方案。</p>
+              <div class="meta">
+                <span>⏱ 15 分钟</span>
+                <span>🧭 架构</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>AI 辅助内容生产工作流</h3>
+              <p>自动摘要、推荐与内容版本控制实践。</p>
+              <div class="meta">
+                <span>⏱ 10 分钟</span>
+                <span>🧠 AI</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>可观测性与监控体系搭建</h3>
+              <p>PV/UV、行为日志与错误追踪实践。</p>
+              <div class="meta">
+                <span>⏱ 12 分钟</span>
+                <span>📈 运维</span>
+              </div>
+            </article>
+          </div>
+          <div class="highlight">
+            <div>
+              <h3>阅读增强功能</h3>
+              <ul>
+                <li>自动生成目录与阅读进度条</li>
+                <li>代码高亮、复制与折叠</li>
+                <li>相关文章推荐与历史版本对比</li>
+              </ul>
+            </div>
+            <button class="primary">进入知识库</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>项目作品集</h2>
+            <p>分类展示个人 / 商业 / 开源作品。</p>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <h3>Personal OS</h3>
+              <p>集成博客、项目、工具与数据可视化的个人门户。</p>
+              <div class="meta">
+                <span>🔗 Demo</span>
+                <span>⭐ 1.2k</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Insight Dashboard</h3>
+              <p>面向创作者的数据分析与内容优化平台。</p>
+              <div class="meta">
+                <span>📊 SaaS</span>
+                <span>🛠 Vue + FastAPI</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Open Source Kit</h3>
+              <p>可插拔个人站点组件库。</p>
+              <div class="meta">
+                <span>🐙 GitHub</span>
+                <span>📦 80+ 组件</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="activity" class="section alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>动态 / 日志</h2>
+            <p>分享最新研究、更新与思考。</p>
+          </div>
+          <div class="timeline feed">
+            <div>
+              <h4>发布《全栈个人网站 2.0》</h4>
+              <p>新增工具中心、可视化仪表盘与部署流水线。</p>
+              <span>2025/03/18</span>
+            </div>
+            <div>
+              <h4>上线「个人站多语言方案」</h4>
+              <p>支持中英切换与自动检测浏览器语言。</p>
+              <span>2025/02/04</span>
+            </div>
+            <div>
+              <h4>完成 SEO 自动化优化</h4>
+              <p>Meta 注入、Open Graph 与 Sitemap 全覆盖。</p>
+              <span>2025/01/09</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>小功能中心</h2>
+            <p>阅读辅助、效率工具与个人偏好设置。</p>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <h3>阅读模式</h3>
+              <p>一键进入无干扰阅读，支持字体与动画控制。</p>
+            </article>
+            <article class="card">
+              <h3>Markdown 编辑器</h3>
+              <p>所见即所得 + 代码高亮 + 版本记录。</p>
+            </article>
+            <article class="card">
+              <h3>时间戳转换</h3>
+              <p>多时区转换、格式化输出。</p>
+            </article>
+            <article class="card">
+              <h3>JSON / YAML / XML 工具</h3>
+              <p>格式化、校验与差异对比。</p>
+            </article>
+            <article class="card">
+              <h3>正则表达式测试</h3>
+              <p>实时匹配与分组展示。</p>
+            </article>
+            <article class="card">
+              <h3>Todo / 番茄钟</h3>
+              <p>轻量任务管理与专注计时。</p>
+            </article>
+          </div>
+          <div class="tool-settings">
+            <div>
+              <h3>用户体验增强</h3>
+              <div class="toggles">
+                <label><input type="checkbox" checked /> 跟随系统主题</label>
+                <label><input type="checkbox" /> 关闭页面动画</label>
+                <label><input type="checkbox" /> 快捷键导航</label>
+              </div>
+            </div>
+            <div>
+              <h3>阅读偏好</h3>
+              <div class="font-controls">
+                <button data-font="-">A-</button>
+                <button data-font="+">A+</button>
+              </div>
+              <p class="hint">支持收藏夹、浏览记录与时间线。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>后台管理系统</h2>
+            <p>覆盖内容、媒体资源、站点配置与数据分析。</p>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <h3>内容后台</h3>
+              <ul>
+                <li>文章 / 项目 / 动态管理</li>
+                <li>批量操作与定时发布</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>站点配置</h3>
+              <ul>
+                <li>SEO 与首页模块开关</li>
+                <li>功能模块启停与版本管理</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>数据与日志</h3>
+              <ul>
+                <li>PV / UV / 路径分析</li>
+                <li>行为、错误与审计日志</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>联系我</h2>
+            <p>欢迎合作与交流，支持多渠道触达。</p>
+          </div>
+          <div class="contact-grid">
+            <div class="card">
+              <h3>留言板</h3>
+              <form class="contact-form">
+                <label>
+                  姓名
+                  <input type="text" placeholder="你的名字" required />
+                </label>
+                <label>
+                  邮箱
+                  <input type="email" placeholder="you@example.com" required />
+                </label>
+                <label>
+                  留言内容
+                  <textarea rows="4" placeholder="想对我说点什么？"></textarea>
+                </label>
+                <button class="primary" type="submit">提交留言</button>
+              </form>
+            </div>
+            <div class="card">
+              <h3>社交与打赏</h3>
+              <ul class="link-list">
+                <li>GitHub · github.com/yun-dev</li>
+                <li>Gitee · gitee.com/yun-dev</li>
+                <li>邮箱 · hi@yun.dev</li>
+                <li>赞助 · Buy me a coffee</li>
+              </ul>
+              <div class="qr">
+                <span>📱</span>
+                <p>扫码关注公众号</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>部署与运维</h4>
+          <p>Docker 化部署 · 多环境配置 · 自动备份 · 监控告警</p>
+        </div>
+        <div>
+          <h4>安全与合规</h4>
+          <p>JWT · CSRF/XSS 防护 · 操作审计 · 限流保护</p>
+        </div>
+        <div>
+          <h4>可扩展方向</h4>
+          <p>AI 内容助手 · 插件系统 · 多站点支持</p>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Yun Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
